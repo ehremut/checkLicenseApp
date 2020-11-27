@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AEF774148220D356281A9A7E /* Pods_hackaton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 300D7F93DFD6976F11EEA9AB /* Pods_hackaton.framework */; };
 		EF631CB42571AC2C00C1AB3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF631CB32571AC2C00C1AB3D /* AppDelegate.swift */; };
 		EF631CB62571AC2C00C1AB3D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF631CB52571AC2C00C1AB3D /* SceneDelegate.swift */; };
 		EF631CB82571AC2C00C1AB3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF631CB72571AC2C00C1AB3D /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		300D7F93DFD6976F11EEA9AB /* Pods_hackaton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hackaton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5256513C04754BE340B457F9 /* Pods-hackaton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hackaton.release.xcconfig"; path = "Target Support Files/Pods-hackaton/Pods-hackaton.release.xcconfig"; sourceTree = "<group>"; };
+		D09C135EF0EEC52372DC396C /* Pods-hackaton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hackaton.debug.xcconfig"; path = "Target Support Files/Pods-hackaton/Pods-hackaton.debug.xcconfig"; sourceTree = "<group>"; };
 		EF631CB02571AC2C00C1AB3D /* hackaton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hackaton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF631CB32571AC2C00C1AB3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF631CB52571AC2C00C1AB3D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEF774148220D356281A9A7E /* Pods_hackaton.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53CF7E3D81ECCF7F2939AF43 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D09C135EF0EEC52372DC396C /* Pods-hackaton.debug.xcconfig */,
+				5256513C04754BE340B457F9 /* Pods-hackaton.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B720B7BF8D01C3D72E7AE287 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				300D7F93DFD6976F11EEA9AB /* Pods_hackaton.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EF631CA72571AC2C00C1AB3D = {
 			isa = PBXGroup;
 			children = (
 				EF631CB22571AC2C00C1AB3D /* hackaton */,
 				EF631CB12571AC2C00C1AB3D /* Products */,
+				53CF7E3D81ECCF7F2939AF43 /* Pods */,
+				B720B7BF8D01C3D72E7AE287 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF631CC42571AC2D00C1AB3D /* Build configuration list for PBXNativeTarget "hackaton" */;
 			buildPhases = (
+				90592241E0F3DE8F2899B498 /* [CP] Check Pods Manifest.lock */,
 				EF631CAC2571AC2C00C1AB3D /* Sources */,
 				EF631CAD2571AC2C00C1AB3D /* Frameworks */,
 				EF631CAE2571AC2C00C1AB3D /* Resources */,
+				D96C3C2DD5627F18189C0692 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		90592241E0F3DE8F2899B498 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hackaton-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D96C3C2DD5627F18189C0692 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hackaton/Pods-hackaton-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hackaton/Pods-hackaton-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-hackaton/Pods-hackaton-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EF631CAC2571AC2C00C1AB3D /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		EF631CC52571AC2D00C1AB3D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D09C135EF0EEC52372DC396C /* Pods-hackaton.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +372,7 @@
 		};
 		EF631CC62571AC2D00C1AB3D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5256513C04754BE340B457F9 /* Pods-hackaton.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

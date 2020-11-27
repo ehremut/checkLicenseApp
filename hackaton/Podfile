@@ -1,0 +1,12 @@
+use_frameworks!
+
+def shared_pods
+pod 'PromiseKit'
+pod 'Alamofire'
+pod 'SwiftyJSON'
+pod 'IQKeyboardManagerSwift'
+end
+
+target 'hackaton' do
+     shared_pods
+end
