@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -48,7 +48,6 @@
 				D09C135EF0EEC52372DC396C /* Pods-hackaton.debug.xcconfig */,
 				5256513C04754BE340B457F9 /* Pods-hackaton.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,15 +80,31 @@
 		EF631CB22571AC2C00C1AB3D /* hackaton */ = {
 			isa = PBXGroup;
 			children = (
-				EF631CB32571AC2C00C1AB3D /* AppDelegate.swift */,
-				EF631CB52571AC2C00C1AB3D /* SceneDelegate.swift */,
+				EFB965FB2571AEB2009CB4E1 /* Main */,
+				EFB965FC2571AEC7009CB4E1 /* Helper */,
+			);
+			path = hackaton;
+			sourceTree = "<group>";
+		};
+		EFB965FB2571AEB2009CB4E1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
 				EF631CB72571AC2C00C1AB3D /* ViewController.swift */,
 				EF631CB92571AC2C00C1AB3D /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		EFB965FC2571AEC7009CB4E1 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				EF631CB32571AC2C00C1AB3D /* AppDelegate.swift */,
+				EF631CB52571AC2C00C1AB3D /* SceneDelegate.swift */,
 				EF631CBC2571AC2D00C1AB3D /* Assets.xcassets */,
 				EF631CBE2571AC2D00C1AB3D /* LaunchScreen.storyboard */,
 				EF631CC12571AC2D00C1AB3D /* Info.plist */,
 			);
-			path = hackaton;
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,7 +373,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8BWQDHPFL8;
-				INFOPLIST_FILE = hackaton/Info.plist;
+				INFOPLIST_FILE = hackaton/Helper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -378,7 +393,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8BWQDHPFL8;
-				INFOPLIST_FILE = hackaton/Info.plist;
+				INFOPLIST_FILE = hackaton/Helper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
