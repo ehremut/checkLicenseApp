@@ -10,10 +10,12 @@
         <scene sceneID="uTX-b8-3xe">
             <objects>
                 <tabBarController id="91B-2R-ket" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9b9-i2-p9o">
+                    <tabBar key="tabBar" opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="9b9-i2-p9o">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.1176470588" green="0.1215686275" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.1176470588" green="0.1215686275" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="RBH-lm-mNh" kind="relationship" relationship="viewControllers" id="hXf-V5-Lfy"/>
@@ -28,7 +30,7 @@
         <scene sceneID="S13-RT-I9U">
             <objects>
                 <viewControllerPlaceholder storyboardName="Profile" id="ZZk-tn-vdE" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="ISf-sV-35c"/>
+                    <tabBarItem key="tabBarItem" title="" image="profile" id="ISf-sV-35c"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hZ9-Jb-yre" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -38,11 +40,15 @@
         <scene sceneID="VT5-z5-3Yk">
             <objects>
                 <viewControllerPlaceholder storyboardName="CheckSound" id="RBH-lm-mNh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="I4S-LN-WkW"/>
+                    <tabBarItem key="tabBarItem" title="" image="addFile" id="I4S-LN-WkW"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cG7-La-DKf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1302" y="-330"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="addFile" width="34" height="34"/>
+        <image name="profile" width="30" height="30"/>
+    </resources>
 </document>

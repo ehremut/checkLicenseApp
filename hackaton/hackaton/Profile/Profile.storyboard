@@ -169,6 +169,8 @@
                             <constraint firstItem="YTW-DG-HFv" firstAttribute="leading" secondItem="r0a-V6-TXl" secondAttribute="leading" id="r4s-C9-7Md"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="profile" id="ukh-eA-VxC"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="loginTF" destination="e3f-fG-MLK" id="SxL-Fn-rFr"/>
                         <outlet property="passwordTF" destination="cEA-qg-q8g" id="yHQ-wu-d07"/>
@@ -191,6 +193,7 @@
         </designable>
     </designables>
     <resources>
+        <image name="profile" width="30" height="30"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

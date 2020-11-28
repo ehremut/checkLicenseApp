@@ -22,6 +22,9 @@
 		EF83DB342572A05500D78BFB /* ExRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF83DB332572A05500D78BFB /* ExRequest.swift */; };
 		EF83DB372572A08D00D78BFB /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF83DB362572A08D00D78BFB /* Constant.swift */; };
 		EF83DB422572A0F800D78BFB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF83DB412572A0F800D78BFB /* User.swift */; };
+		EF83DB462572DD0700D78BFB /* CheckModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF83DB452572DD0600D78BFB /* CheckModule.swift */; };
+		EF83DB492572EAF600D78BFB /* Sound.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF83DB482572EAF600D78BFB /* Sound.storyboard */; };
+		EF83DB4D2572EB1000D78BFB /* SoundVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF83DB4C2572EB1000D78BFB /* SoundVC.swift */; };
 		EFB966082571B299009CB4E1 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB966072571B299009CB4E1 /* ProfileVC.swift */; };
 		EFB9660B2571B2A4009CB4E1 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFB9660A2571B2A4009CB4E1 /* Profile.storyboard */; };
 		EFB9660F2571BDAC009CB4E1 /* CustomTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB9660E2571BDAC009CB4E1 /* CustomTF.swift */; };
@@ -49,6 +52,9 @@
 		EF83DB332572A05500D78BFB /* ExRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExRequest.swift; sourceTree = "<group>"; };
 		EF83DB362572A08D00D78BFB /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		EF83DB412572A0F800D78BFB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EF83DB452572DD0600D78BFB /* CheckModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckModule.swift; sourceTree = "<group>"; };
+		EF83DB482572EAF600D78BFB /* Sound.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sound.storyboard; sourceTree = "<group>"; };
+		EF83DB4C2572EB1000D78BFB /* SoundVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundVC.swift; sourceTree = "<group>"; };
 		EFB966072571B299009CB4E1 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		EFB9660A2571B2A4009CB4E1 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		EFB9660E2571BDAC009CB4E1 /* CustomTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTF.swift; sourceTree = "<group>"; };
@@ -106,6 +112,7 @@
 		EF631CB22571AC2C00C1AB3D /* hackaton */ = {
 			isa = PBXGroup;
 			children = (
+				EF83DB4B2572EAFC00D78BFB /* Sound */,
 				EFB9662425726BC2009CB4E1 /* CheckSound */,
 				EFB966062571B272009CB4E1 /* Profile */,
 				EFB965FB2571AEB2009CB4E1 /* Main */,
@@ -136,6 +143,15 @@
 				EF83DB332572A05500D78BFB /* ExRequest.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		EF83DB4B2572EAFC00D78BFB /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				EF83DB482572EAF600D78BFB /* Sound.storyboard */,
+				EF83DB4C2572EB1000D78BFB /* SoundVC.swift */,
+			);
+			path = Sound;
 			sourceTree = "<group>";
 		};
 		EFB965FB2571AEB2009CB4E1 /* Main */ = {
@@ -182,6 +198,7 @@
 			children = (
 				EFB9662525726F3D009CB4E1 /* CheckSoundVC.swift */,
 				EFB9662825726F7A009CB4E1 /* CheckSound.storyboard */,
+				EF83DB452572DD0600D78BFB /* CheckModule.swift */,
 			);
 			path = CheckSound;
 			sourceTree = "<group>";
@@ -245,6 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF83DB492572EAF600D78BFB /* Sound.storyboard in Resources */,
 				EF631CC02571AC2D00C1AB3D /* LaunchScreen.storyboard in Resources */,
 				EF631CBD2571AC2D00C1AB3D /* Assets.xcassets in Resources */,
 				EFB9660B2571B2A4009CB4E1 /* Profile.storyboard in Resources */,
@@ -304,6 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF83DB4D2572EB1000D78BFB /* SoundVC.swift in Sources */,
 				EFB966082571B299009CB4E1 /* ProfileVC.swift in Sources */,
 				EF631CB82571AC2C00C1AB3D /* ViewController.swift in Sources */,
 				EF631CB42571AC2C00C1AB3D /* AppDelegate.swift in Sources */,
@@ -313,6 +332,7 @@
 				EFB9662625726F3D009CB4E1 /* CheckSoundVC.swift in Sources */,
 				EF631CB62571AC2C00C1AB3D /* SceneDelegate.swift in Sources */,
 				EF83DB422572A0F800D78BFB /* User.swift in Sources */,
+				EF83DB462572DD0700D78BFB /* CheckModule.swift in Sources */,
 				EF83DB372572A08D00D78BFB /* Constant.swift in Sources */,
 				EF83DB312572A02800D78BFB /* NetworkRequest.swift in Sources */,
 				EF83DB2B25729F4C00D78BFB /* NetworkService.swift in Sources */,

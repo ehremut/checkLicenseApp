@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xDn-VD-Hkq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rSS-AN-5gK">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
@@ -8,22 +8,43 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Check SoundVC-->
+        <!--Navigation Controller-->
+        <scene sceneID="Eab-MD-hdX">
+            <objects>
+                <navigationController id="rSS-AN-5gK" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="ZJp-Rs-eJ8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.1176470588" green="0.1215686275" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="xDn-VD-Hkq" kind="relationship" relationship="rootViewController" id="Mt4-F5-dQs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aus-vv-JHC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-678" y="90"/>
+        </scene>
+        <!--Загрузка композиции-->
         <scene sceneID="gDs-IM-2pf">
             <objects>
                 <viewController id="xDn-VD-Hkq" customClass="CheckSoundVC" customModule="hackaton" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" opaque="NO" contentMode="scaleToFill" id="lnw-HD-Nfv">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gjy-Jd-zbx">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgCheck" translatesAutoresizingMaskIntoConstraints="NO" id="J2f-u7-1my">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="v9f-VC-Ka5">
-                                        <rect key="frame" x="34" y="319.5" width="307" height="257.5"/>
+                                        <rect key="frame" x="34" y="245.5" width="307" height="257.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ixO-uX-Ycu">
                                                 <rect key="frame" x="0.0" y="0.0" width="307" height="115"/>
@@ -96,16 +117,16 @@
                                     <constraint firstItem="J2f-u7-1my" firstAttribute="leading" secondItem="Gjy-Jd-zbx" secondAttribute="leading" id="PjQ-rn-gA4"/>
                                     <constraint firstItem="v9f-VC-Ka5" firstAttribute="centerX" secondItem="Gjy-Jd-zbx" secondAttribute="centerX" id="TWf-d0-6cz"/>
                                     <constraint firstAttribute="trailing" secondItem="v9f-VC-Ka5" secondAttribute="trailing" constant="34" id="Xy3-zm-rnr"/>
-                                    <constraint firstAttribute="bottom" secondItem="v9f-VC-Ka5" secondAttribute="bottom" constant="90" id="tVO-Nf-aWe"/>
+                                    <constraint firstAttribute="bottom" secondItem="v9f-VC-Ka5" secondAttribute="bottom" constant="120" id="tVO-Nf-aWe"/>
                                     <constraint firstAttribute="bottom" secondItem="J2f-u7-1my" secondAttribute="bottom" id="xdR-5c-6vv"/>
                                     <constraint firstAttribute="trailing" secondItem="J2f-u7-1my" secondAttribute="trailing" id="zqg-vB-eAn"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AGX-6z-zrS">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="-70" translatesAutoresizingMaskIntoConstraints="NO" id="Zq6-JN-Fd7">
-                                        <rect key="frame" x="45" y="168.5" width="285" height="330"/>
+                                        <rect key="frame" x="45" y="146.5" width="285" height="330"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xPN-un-HT2">
                                                 <rect key="frame" x="0.0" y="0.0" width="285" height="200"/>
@@ -143,6 +164,11 @@
                             <constraint firstItem="Gjy-Jd-zbx" firstAttribute="top" secondItem="lnw-HD-Nfv" secondAttribute="top" id="n4X-j5-JGU"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="addFile" selectedImage="addFile" id="Uyy-or-nUg">
+                        <color key="badgeColor" systemColor="systemRedColor"/>
+                    </tabBarItem>
+                    <navigationItem key="navigationItem" title="Загрузка композиции" id="85r-y6-Z0J"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="choiceView" destination="Gjy-Jd-zbx" id="ctE-pP-oLz"/>
                         <outlet property="processView" destination="AGX-6z-zrS" id="PZO-p3-8Aq"/>
@@ -163,12 +189,16 @@
         </designable>
     </designables>
     <resources>
+        <image name="addFile" width="34" height="34"/>
         <image name="bgCheck" width="411" height="808"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

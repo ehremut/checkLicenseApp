@@ -14,12 +14,12 @@ class NetworkService: NetworkManager {
     var res = ASRequest()
     func getJson(url: String) -> Promise<ASRequest> {
         return Promise { [unowned self] promise in
-            let request = NetworkRequest.login(url: url, method: .post, parameters: Constant.parameters)
+            let request = NetworkRequest.check(url: url, method: .post, parameters: Constant.parametersCheck)
             self.performRequest(request).done({ (data) in
-                switch data.code{
+                switch data.code {
                 case .access:
                     res.code = data.code
-                    parseJson(data: data.data!)
+                    //parseJson(data: data.data!)
                     promise.fulfill(self.res)
                 case .error:
                     res.code = data.code

@@ -32,6 +32,12 @@ class NetworkRequest{
         return request
     }
     
+    class func check(url: String, method: Alamofire.HTTPMethod, parameters: [String: Any]) -> Self {
+        let request = self.init(url: url, method: method, encoding: JSONEncoding.default)
+        request.withParam(param: parameters)
+        return request
+    }
+    
     class func login(url: String, method: Alamofire.HTTPMethod, parameters: [String: String]) -> Self {
         let request = self.init(url: url, method: method, encoding: JSONEncoding.default)
         request.withParam(param: parameters)

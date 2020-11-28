@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Найденная композиция-->
+        <scene sceneID="Fx8-ps-lz0">
+            <objects>
+                <viewController id="eJ9-gH-DLu" customClass="SoundVC" customModule="hackaton" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="hnM-Vw-UAk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2jo-cJ-RcP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.1176470588" green="0.1215686275" blue="0.15686274510000001" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0If-8F-LmG"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="2jo-cJ-RcP" secondAttribute="bottom" id="BBC-fs-uhB"/>
+                            <constraint firstItem="2jo-cJ-RcP" firstAttribute="leading" secondItem="hnM-Vw-UAk" secondAttribute="leading" id="hnA-BA-H5A"/>
+                            <constraint firstItem="2jo-cJ-RcP" firstAttribute="top" secondItem="hnM-Vw-UAk" secondAttribute="top" id="kje-Sb-QWg"/>
+                            <constraint firstAttribute="trailing" secondItem="2jo-cJ-RcP" secondAttribute="trailing" id="tua-PM-BJo"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="addFile" selectedImage="addFile" id="Vn9-LN-MG9">
+                        <color key="badgeColor" systemColor="systemRedColor"/>
+                    </tabBarItem>
+                    <navigationItem key="navigationItem" title="Найденная композиция" id="YCX-ht-0us"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bTG-hM-9hp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="205.79710144927537" y="80.357142857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="addFile" width="34" height="34"/>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
