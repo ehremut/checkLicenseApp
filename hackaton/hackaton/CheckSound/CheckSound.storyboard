@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xDn-VD-Hkq">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Check SoundVC-->
+        <scene sceneID="gDs-IM-2pf">
+            <objects>
+                <viewController id="xDn-VD-Hkq" customClass="CheckSoundVC" customModule="hackaton" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lnw-HD-Nfv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gjy-Jd-zbx">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgCheck" translatesAutoresizingMaskIntoConstraints="NO" id="J2f-u7-1my">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="v9f-VC-Ka5">
+                                        <rect key="frame" x="34" y="565" width="346" height="241"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ixO-uX-Ycu">
+                                                <rect key="frame" x="0.0" y="0.0" width="346" height="86"/>
+                                                <string key="text">Вы можете проверить композицию, загрузив её 
+с устройства или по ссылке</string>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Iqw-6j-x34">
+                                                <rect key="frame" x="0.0" y="113" width="346" height="128"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BPS-2t-v9a" customClass="LGButton" customModule="LGButton">
+                                                        <rect key="frame" x="0.0" y="0.0" width="346" height="56"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="BPS-2t-v9a" secondAttribute="height" multiplier="173:28" id="8aG-5b-i59"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="fullyRoundedCorners" value="YES"/>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="showTouchFeedback" value="YES"/>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                                                <color key="value" systemColor="systemPinkColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="titleString" value="С УСТРОЙСТВА"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="titleFontName" value="С УСТРОЙСТВА"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="titleFontSize">
+                                                                <real key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="fromFile:" destination="xDn-VD-Hkq" eventType="touchUpInside" id="v9b-Ap-AJJ"/>
+                                                        </connections>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NnK-yh-Ji0" customClass="LGButton" customModule="LGButton">
+                                                        <rect key="frame" x="0.0" y="72" width="346" height="56"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="NnK-yh-Ji0" secondAttribute="height" multiplier="173:28" id="cxc-66-DZJ"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="fullyRoundedCorners" value="YES"/>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="showTouchFeedback" value="YES"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="titleString" value="ПО ССЫЛКЕ"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="titleFontName" value="ПО ССЫЛКЕ"/>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="gradientRotation">
+                                                                <real key="value" value="0.0"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="fromURL:" destination="xDn-VD-Hkq" eventType="touchUpInside" id="ZV0-OA-6b9"/>
+                                                        </connections>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.11764705882352941" green="0.12156862745098039" blue="0.15686274509803921" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="v9f-VC-Ka5" firstAttribute="leading" secondItem="Gjy-Jd-zbx" secondAttribute="leading" constant="34" id="9H1-Cd-uUJ"/>
+                                    <constraint firstItem="J2f-u7-1my" firstAttribute="leading" secondItem="Gjy-Jd-zbx" secondAttribute="leading" id="PjQ-rn-gA4"/>
+                                    <constraint firstItem="v9f-VC-Ka5" firstAttribute="centerX" secondItem="Gjy-Jd-zbx" secondAttribute="centerX" id="TWf-d0-6cz"/>
+                                    <constraint firstAttribute="trailing" secondItem="v9f-VC-Ka5" secondAttribute="trailing" constant="34" id="Xy3-zm-rnr"/>
+                                    <constraint firstAttribute="bottom" secondItem="v9f-VC-Ka5" secondAttribute="bottom" constant="90" id="tVO-Nf-aWe"/>
+                                    <constraint firstAttribute="bottom" secondItem="J2f-u7-1my" secondAttribute="bottom" id="xdR-5c-6vv"/>
+                                    <constraint firstAttribute="trailing" secondItem="J2f-u7-1my" secondAttribute="trailing" id="zqg-vB-eAn"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="n7S-K4-05z"/>
+                        <constraints>
+                            <constraint firstItem="Gjy-Jd-zbx" firstAttribute="leading" secondItem="lnw-HD-Nfv" secondAttribute="leading" id="I6m-K0-1M1"/>
+                            <constraint firstAttribute="bottom" secondItem="Gjy-Jd-zbx" secondAttribute="bottom" id="OHf-jv-W0d"/>
+                            <constraint firstItem="J2f-u7-1my" firstAttribute="top" secondItem="Gjy-Jd-zbx" secondAttribute="top" id="Rfh-Gr-1H8"/>
+                            <constraint firstAttribute="trailing" secondItem="Gjy-Jd-zbx" secondAttribute="trailing" id="YBy-Jg-4or"/>
+                            <constraint firstItem="Gjy-Jd-zbx" firstAttribute="top" secondItem="lnw-HD-Nfv" secondAttribute="top" id="n4X-j5-JGU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="choiceView" destination="Gjy-Jd-zbx" id="ctE-pP-oLz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mPt-vD-OEx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="205.79710144927537" y="80.357142857142847"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="BPS-2t-v9a">
+            <size key="intrinsicContentSize" width="10" height="10"/>
+        </designable>
+        <designable name="NnK-yh-Ji0">
+            <size key="intrinsicContentSize" width="10" height="10"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="bgCheck" width="411" height="808"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

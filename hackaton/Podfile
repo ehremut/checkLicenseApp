@@ -1,10 +1,12 @@
 use_frameworks!
 
 def shared_pods
+pod 'LGButton'
 pod 'PromiseKit'
 pod 'Alamofire'
 pod 'SwiftyJSON'
 pod 'IQKeyboardManagerSwift'
+pod 'lottie-ios'
 end
 
 target 'hackaton' do

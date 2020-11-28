@@ -1,6 +1,8 @@
 PODS:
   - Alamofire (5.4.0)
   - IQKeyboardManagerSwift (6.5.6)
+  - LGButton (1.1.6)
+  - lottie-ios (3.1.9)
   - PromiseKit (6.13.1):
     - PromiseKit/CorePromise (= 6.13.1)
     - PromiseKit/Foundation (= 6.13.1)
@@ -15,6 +17,8 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - IQKeyboardManagerSwift
+  - LGButton
+  - lottie-ios
   - PromiseKit
   - SwiftyJSON
 
@@ -22,15 +26,19 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - IQKeyboardManagerSwift
+    - LGButton
+    - lottie-ios
     - PromiseKit
     - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 3b6a534a3df22db367e4dedeeca73d1ddfcf0e2f
   IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  LGButton: 9f0a7f9d3030e3f504108342f6b66d64a429371b
+  lottie-ios: 3a3758ef5a008e762faec9c9d50a39842f26d124
   PromiseKit: 28fda91c973cc377875d8c0ea4f973013c05b6db
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 5046aa9862f01603d2a806de705bcfc0236a2b43
+PODFILE CHECKSUM: 11c5f63ca712415b03d68723618f4da632ff49e1
 
 COCOAPODS: 1.9.3
