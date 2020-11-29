@@ -1,0 +1,20 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/golang:1.12
+    working_directory: /go/src/github.com/sfluor/musig
+    steps:
+      - checkout
+      - run:
+          name: Setup Environment Variables
+          command: echo 'export GO111MODULE=on' >> $BASH_ENV
+      - run:
+          name: "--- Install portaudio ---"
+          command: sudo apt install portaudio19-dev
+      - run:
+          name: "--- Testing ---"
+          command: make test
+      - run:
+          name: "--- Building ---"
+          command: make build

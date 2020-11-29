@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8a958ece-4c32-4542-84f6-eb502dee9c83" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="/usr/local/go" />
+  <component name="ProjectId" id="1kq7FyGOAQimfVg4coeZRpxDAio" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql&#10;sqlite" />
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/internal/db" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="go.autoimport" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/internal/db" />
+      <recent name="$PROJECT_DIR$/internal/recorgnition" />
+      <recent name="$PROJECT_DIR$/internal/recorgnition/internal/pkg/pipeline" />
+      <recent name="$PROJECT_DIR$/internal/recorgnition/cmd/musig" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/internal/db" />
+      <recent name="$PROJECT_DIR$/internal/config" />
+      <recent name="$PROJECT_DIR$/internal/auth" />
+    </key>
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/get-song-list" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/load" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/recognition" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/recog" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/check" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="x-access-token" />
+                <option name="value" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkRpcm9tYW4iLCJleHAiOjkyMjMzNzIwMzY4NTQ3NzU4MDd9.i0Qz9BjgVUHBKdRtYmCr8gE1A0lj-KzJagWc9axTtNc" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/login" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="x-access-token" />
+                <option name="value" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkRpcm9tYW4iLCJleHAiOjkyMjMzNzIwMzY4NTQ3NzU4MDd9.i0Qz9BjgVUHBKdRtYmCr8gE1A0lj-KzJagWc9axTtNc" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/login" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="x-access-token" />
+                <option name="value" value="&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkRpcm9tYW4iLCJleHAiOjkyMjMzNzIwMzY4NTQ3NzU4MDd9.i0Qz9BjgVUHBKdRtYmCr8gE1A0lj-KzJagWc9axTtNc&quot;" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/login" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;login&quot;: &quot;roman&quot;,&#10;  &quot;password&quot;: &quot;password&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="HTTP Request.test#5">
+    <configuration name="go build soundHelper" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="sound_helper" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <package value="soundHelper" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestHashAndSalt in soundHelper/internal/auth" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="sound_helper" />
+      <working_directory value="$PROJECT_DIR$/internal/auth" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="soundHelper/internal/auth" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestHashAndSalt\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" path="$PROJECT_DIR$/test.http" index="2" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="test#3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/test.http" index="3" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="test#4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/test.http" index="4" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="test#5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/test.http" index="5" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.test#5" />
+        <item itemvalue="Go Build.go build soundHelper" />
+        <item itemvalue="Go Test.TestHashAndSalt in soundHelper/internal/auth" />
+        <item itemvalue="HTTP Request.test#4" />
+        <item itemvalue="HTTP Request.test#3" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="320" y="126" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606597413565">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="126" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1606597413565" />
+    <state x="297" y="270" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606607101983">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="297" y="270" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1606607101983" />
+    <state x="838" y="160" key="#xdebugger.evaluate" timestamp="1606587927425">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="838" y="160" key="#xdebugger.evaluate/0.0.1440.900@0.0.1440.900" timestamp="1606587927425" />
+    <state width="1398" height="283" key="GridCell.Tab.0.bottom" timestamp="1606626039392">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="283" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1606626039392" />
+    <state width="1398" height="197" key="GridCell.Tab.0.bottom/0.25.1440.794@0.25.1440.794" timestamp="1606611753073" />
+    <state width="1398" height="236" key="GridCell.Tab.0.bottom/0.25.1440.797@0.25.1440.797" timestamp="1606592689709" />
+    <state width="1398" height="283" key="GridCell.Tab.0.center" timestamp="1606626039392">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="283" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1606626039392" />
+    <state width="1398" height="197" key="GridCell.Tab.0.center/0.25.1440.794@0.25.1440.794" timestamp="1606611753073" />
+    <state width="1398" height="236" key="GridCell.Tab.0.center/0.25.1440.797@0.25.1440.797" timestamp="1606592689708" />
+    <state width="1398" height="283" key="GridCell.Tab.0.left" timestamp="1606626039391">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="283" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1606626039391" />
+    <state width="1398" height="197" key="GridCell.Tab.0.left/0.25.1440.794@0.25.1440.794" timestamp="1606611753072" />
+    <state width="1398" height="236" key="GridCell.Tab.0.left/0.25.1440.797@0.25.1440.797" timestamp="1606592689707" />
+    <state width="1398" height="283" key="GridCell.Tab.0.right" timestamp="1606626039392">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="283" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1606626039392" />
+    <state width="1398" height="197" key="GridCell.Tab.0.right/0.25.1440.794@0.25.1440.794" timestamp="1606611753073" />
+    <state width="1398" height="236" key="GridCell.Tab.0.right/0.25.1440.797@0.25.1440.797" timestamp="1606592689708" />
+    <state width="1398" height="340" key="GridCell.Tab.1.bottom" timestamp="1606615389261">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="340" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1606615389261" />
+    <state width="1398" height="197" key="GridCell.Tab.1.bottom/0.25.1440.794@0.25.1440.794" timestamp="1606611752954" />
+    <state width="1398" height="264" key="GridCell.Tab.1.bottom/0.25.1440.797@0.25.1440.797" timestamp="1606590878884" />
+    <state width="1398" height="340" key="GridCell.Tab.1.center" timestamp="1606615389260">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="340" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1606615389260" />
+    <state width="1398" height="197" key="GridCell.Tab.1.center/0.25.1440.794@0.25.1440.794" timestamp="1606611752953" />
+    <state width="1398" height="264" key="GridCell.Tab.1.center/0.25.1440.797@0.25.1440.797" timestamp="1606590878883" />
+    <state width="1398" height="340" key="GridCell.Tab.1.left" timestamp="1606615389260">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="340" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1606615389260" />
+    <state width="1398" height="197" key="GridCell.Tab.1.left/0.25.1440.794@0.25.1440.794" timestamp="1606611752953" />
+    <state width="1398" height="264" key="GridCell.Tab.1.left/0.25.1440.797@0.25.1440.797" timestamp="1606590878882" />
+    <state width="1398" height="340" key="GridCell.Tab.1.right" timestamp="1606615389261">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="340" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1606615389261" />
+    <state width="1398" height="197" key="GridCell.Tab.1.right/0.25.1440.794@0.25.1440.794" timestamp="1606611752954" />
+    <state width="1398" height="264" key="GridCell.Tab.1.right/0.25.1440.797@0.25.1440.797" timestamp="1606590878883" />
+    <state width="229" height="457" key="HiddenNamespacesPopup" timestamp="1606597402187">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="229" height="457" key="HiddenNamespacesPopup/0.0.1440.900@0.0.1440.900" timestamp="1606597402187" />
+    <state x="229" y="100" key="SettingsEditor" timestamp="1606416665919">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="229" y="100" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1606416665919" />
+    <state width="720" height="436" key="XDebugger.FullValuePopup" timestamp="1606611871254">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="720" height="436" key="XDebugger.FullValuePopup/0.0.1440.900@0.0.1440.900" timestamp="1606611871254" />
+    <state width="720" height="436" key="XDebugger.FullValuePopup/0.25.1440.794@0.25.1440.794" timestamp="1606611848611" />
+    <state x="587" y="92" width="478" height="576" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1606621454827">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="587" y="92" width="478" height="576" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1440.900@0.0.1440.900" timestamp="1606621454827" />
+    <state x="421" y="219" width="597" height="548" key="find.popup" timestamp="1606618642175">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="421" y="219" width="597" height="548" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1606618642175" />
+    <state x="385" y="217" width="670" height="676" key="search.everywhere.popup" timestamp="1606617497739">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="217" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1606617497739" />
+  </component>
+</project>

@@ -1,0 +1,281 @@
+POST http://localhost:8080/get-song-list
+accept: application/json
+
+<> 2020-11-29T080039.200.txt
+
+###
+
+POST http://localhost:8080/get-song-list
+accept: application/json
+
+###
+
+POST http://localhost:8080/load
+accept: application/json
+
+###
+
+POST http://localhost:8080/load
+accept: application/json
+
+###
+
+POST http://localhost:8080/load
+accept: application/json
+
+###
+
+POST http://localhost:8080/load
+accept: application/json
+
+###
+
+POST http://localhost:8080/recognition
+accept: application/json
+
+###
+
+POST http://localhost:8080/recognition
+accept: application/json
+
+<> 2020-11-28T061517.200.txt
+
+###
+
+POST http://localhost:8080/recognition
+accept: application/json
+
+###
+
+POST http://localhost:8080/recognition
+accept: application/json
+
+###
+
+POST http://localhost:8080/recognition
+accept: application/json
+
+###
+
+POST http://localhost:8080/load
+accept: application/json
+
+###
+
+POST http://localhost:8080/load
+accept: application/json
+
+###
+
+POST http://localhost:8080/load
+accept: application/json
+
+###
+
+POST http://localhost:8080/load
+accept: application/json
+
+###
+
+POST http://localhost:8080/load
+accept: application/json
+
+###
+
+POST http://localhost:8080/load
+accept: application/json
+
+###
+
+POST http://localhost:8080/load
+accept: application/json
+
+###
+
+POST http://localhost:8080/load
+accept: application/json
+
+###
+
+POST http://localhost:8080/load
+accept: application/json
+
+###
+
+POST http://localhost:8080/recognition
+accept: application/json
+
+###
+
+POST http://localhost:8080/load
+accept: application/json
+
+###
+
+POST http://localhost:8080/recognition
+accept: application/json
+
+###
+
+POST http://localhost:8080/recognition
+accept: application/json
+
+###
+
+POST http://localhost:8080/recognition
+accept: application/json
+
+###
+
+POST http://localhost:8080/recognition
+accept: application/json
+
+###
+
+POST http://localhost:8080/recognition
+accept: application/json
+
+###
+
+POST http://localhost:8080/recognition
+accept: application/json
+
+###
+
+POST http://localhost:8080/recognition
+accept: application/json
+
+###
+
+POST http://localhost:8080/recognition
+accept: application/json
+
+###
+
+POST http://localhost:8080/recognition
+accept: application/json
+
+###
+
+POST http://localhost:8080/recognition
+accept: application/json
+
+###
+
+POST http://localhost:8080/recognition
+accept: application/json
+
+###
+
+POST http://localhost:8080/recog
+accept: application/json
+
+###
+
+POST http://localhost:8080/recog
+accept: application/json
+
+###
+
+POST http://localhost:8080/recog
+accept: application/json
+
+###
+
+POST http://localhost:8080/recog
+accept: application/json
+
+###
+
+POST http://localhost:8080/recog
+accept: application/json
+
+###
+
+POST http://localhost:8080/recog
+accept: application/json
+
+###
+
+POST http://localhost:8080/recog
+accept: application/json
+
+###
+
+POST http://localhost:8080/recog
+accept: application/json
+
+###
+
+POST http://localhost:8080/check
+accept: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkRpcm9tYW4iLCJleHAiOjkyMjMzNzIwMzY4NTQ3NzU4MDd9.i0Qz9BjgVUHBKdRtYmCr8gE1A0lj-KzJagWc9axTtNc
+
+<> 2020-11-27T121430.200.txt
+
+###
+
+POST http://localhost:8080/check
+accept: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkRpcm9tYW4iLCJleHAiOjkyMjMzNzIwMzY4NTQ3NzU4MDd9.i0Qz9BjgVUHBKdRtYmCr8gE1A0lj-KzJagWc9axTtNc
+
+<> 2020-11-27T120646.200.txt
+
+###
+
+POST http://localhost:8080/login
+accept: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkRpcm9tYW4iLCJleHAiOjkyMjMzNzIwMzY4NTQ3NzU4MDd9.i0Qz9BjgVUHBKdRtYmCr8gE1A0lj-KzJagWc9axTtNc
+
+<> 2020-11-27T120631.500.txt
+
+###
+
+POST http://localhost:8080/login
+accept: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkRpcm9tYW4iLCJleHAiOjkyMjMzNzIwMzY4NTQ3NzU4MDd9.i0Qz9BjgVUHBKdRtYmCr8gE1A0lj-KzJagWc9axTtNc
+
+<> 2020-11-27T120501-1.500.txt
+
+###
+
+POST http://localhost:8080/login
+accept: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkRpcm9tYW4iLCJleHAiOjkyMjMzNzIwMzY4NTQ3NzU4MDd9.i0Qz9BjgVUHBKdRtYmCr8gE1A0lj-KzJagWc9axTtNc
+
+<> 2020-11-27T120501.500.txt
+
+###
+
+POST http://localhost:8080/login
+accept: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkRpcm9tYW4iLCJleHAiOjkyMjMzNzIwMzY4NTQ3NzU4MDd9.i0Qz9BjgVUHBKdRtYmCr8gE1A0lj-KzJagWc9axTtNc
+
+<> 2020-11-27T120500-1.500.txt
+
+###
+
+POST http://localhost:8080/login
+accept: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkRpcm9tYW4iLCJleHAiOjkyMjMzNzIwMzY4NTQ3NzU4MDd9.i0Qz9BjgVUHBKdRtYmCr8gE1A0lj-KzJagWc9axTtNc
+
+<> 2020-11-27T120500.500.txt
+
+###
+
+POST http://localhost:8080/login
+accept: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkRpcm9tYW4iLCJleHAiOjkyMjMzNzIwMzY4NTQ3NzU4MDd9.i0Qz9BjgVUHBKdRtYmCr8gE1A0lj-KzJagWc9axTtNc
+
+<> 2020-11-27T120459.500.txt
+
+###
+
+POST http://localhost:8080/login
+accept: application/json
+x-access-token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkRpcm9tYW4iLCJleHAiOjkyMjMzNzIwMzY4NTQ3NzU4MDd9.i0Qz9BjgVUHBKdRtYmCr8gE1A0lj-KzJagWc9axTtNc"
+
+<> 2020-11-27T120448.500.txt
+
+###
+
