@@ -6,12 +6,14 @@
 //
 
 import Foundation
+import UIKit
 
 struct AudioModel{
     var artist: String?
     var title: String?
     var licence: Int?
     var link: String?
+    var image: UIImage?
 }
 
 struct CheckModel {

@@ -30,33 +30,33 @@ class NetworkService: NetworkManager {
                     res.error = data.error ?? ErrorType.unknown
                     promise.fulfill(self.res ?? ASRequest(code: .error))
                 }
-               // promise.fulfill(json)
+                // promise.fulfill(json)
             })
             
         }
     }
     
     
-//    {
-//      "Find": {
-//        "Artist": "string",
-//        "Title": "string",
-//        "Album": "string",
-//        "Licence": "int"
-//      },
-//      "Similar": [
-//        {
-//          "Artist": "string",
-//          "Title": "string",
-//          "Album": "string",
-//          "Licence": "int"
-//        }
-//      ]
-//    }
-//
-//    OpenLicence    = 0
-//    CloseLicence   = 1
-//    UnknownLicence = 2
+    //    {
+    //      "Find": {
+    //        "Artist": "string",
+    //        "Title": "string",
+    //        "Album": "string",
+    //        "Licence": "int"
+    //      },
+    //      "Similar": [
+    //        {
+    //          "Artist": "string",
+    //          "Title": "string",
+    //          "Album": "string",
+    //          "Licence": "int"
+    //        }
+    //      ]
+    //    }
+    //
+    //    OpenLicence    = 0
+    //    CloseLicence   = 1
+    //    UnknownLicence = 2
     
     func parseJson(data: Data){
         guard let jsondata = try? JSON(data: data) else {return}
@@ -69,18 +69,30 @@ class NetworkService: NetworkManager {
         guard let title = jsondata["Find"]["title"].string else {return}
         guard let licence = jsondata["Find"]["licence"].int else {return}
         guard let link = jsondata["Find"]["link"].string else {return}
+        guard let img = jsondata["Find"]["image"].string else {return}
+        guard let imgURL = URL(string: img) else {return}
         let similar = jsondata["Similar"].array ?? []
         for i in similar{
             guard let artist = i["artist"].string else {return}
             guard let title = i["title"].string else {return}
             guard let licence = i["licence"].int else {return}
-            guard let link = jsondata["Find"]["link"].string else {return}
+            guard let link = i["link"].string else {return}
             mass.append(AudioModel(artist: artist, title: title, licence: licence, link: link))
         }
-       
         
-        let musics = CheckModel(find: AudioModel(artist: artist, title: title, licence: licence, link: link), similar: mass)
-        self.res.music = musics
+        
+        if let data = try? Data(contentsOf: imgURL) {
+            if let image = UIImage(data: data) {
+                
+                let musics = CheckModel(find: AudioModel(artist: artist, title: title, licence: licence, link: link, image: image), similar: mass)
+                self.res.music = musics
+            }
+            
+        }
+        
     }
     
+    
 }
+
+

@@ -7,19 +7,64 @@
 
 import UIKit
 import LGButton
+import FRadioPlayer
 
 protocol YourCellDelegate : class {
-    func didPressButton(_ tag: Int)
+    func didPressButton(_ tag: Int) -> Bool
+    func didloadButton(_ tag: Int)
+    
 }
 
-class SoundVC: UIViewController {
+class SoundVC: UIViewController, FRadioPlayerDelegate {
+    
+    @IBOutlet weak var licenceView: UIView! {
+        didSet {
+            
+            licenceView.layer.cornerRadius = 8
+        }
+    }
+    var playing = false
+    func radioPlayer(_ player: FRadioPlayer, playerStateDidChange state: FRadioPlayerState) {
+        switch state {
+        case .urlNotSet:
+            print("")
+        case .readyToPlay:
+            print("")
+        case .loading:
+            print("")
+        case .loadingFinished:
+            print("")
+        case .error:
+            print("")
+        }
+    }
+    
+    func radioPlayer(_ player: FRadioPlayer, playbackStateDidChange state: FRadioPlaybackState) {
+        switch state {
+        case .playing:
+            print("")
+        case .paused:
+            player.isAutoPlay = false
+        case .stopped:
+            player.pause()
+        }
+    }
+    
 
-    @IBOutlet weak var imageView: UIImageView!
+    let player = FRadioPlayer.shared
+   
     var music = CheckModel()
     @IBOutlet weak var findAudioView: UIView!{
         didSet {
             findAudioView.layer.cornerRadius = 30
             //findAudioView.backgroundColor = UIColor
+        }
+    }
+    @IBOutlet weak var imageView: UIImageView! {
+        didSet{
+            imageView.layer.cornerRadius = 30
+            imageView.image = music.find?.image
+            imageView.contentMode = .left
         }
     }
     
@@ -30,6 +75,26 @@ class SoundVC: UIViewController {
     @IBOutlet weak var titleTV: UILabel!
     @IBOutlet weak var likeView: UIButton!
     
+    @IBOutlet weak var licence: UILabel!{
+        didSet  {
+            switch music.find?.licence! {
+            
+            case 0:
+                licence.text = "Лицензия открытая"
+                licence.textColor = .green
+            case 1:
+                licence.text = "Лицензия закрытая"
+                licence.textColor = .systemPink
+                
+            case 2:
+                licence.text = "Лицензия не найдена"
+                licence.textColor = .yellow
+            default:
+                licence.text = "Лицензия не найдена"
+                licence.textColor = .yellow
+            }
+    }
+    }
     
     @IBOutlet weak var name: UILabel! {
         didSet {
@@ -51,9 +116,15 @@ class SoundVC: UIViewController {
             
             tableView.isHidden = false
             titleTV.isHidden = false
+            self.player.delegate = self
             //self.tableView.reloadData()
         }
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+        player.stop()
     }
     
     @IBAction func like(_ sender: UIButton) {
@@ -61,10 +132,10 @@ class SoundVC: UIViewController {
     
     @IBAction func play(_ sender: UIButton) {
         if music.find?.licence == 0 {
-            
+            player.radioURL = URL(string: music.find?.link ?? "")
+            player.play()
         }
         else {
-            
             guard let url = URL(string: music.find?.link ?? "") else { return }
             UIApplication.shared.open(url)
         }
@@ -85,7 +156,9 @@ extension SoundVC:  UITableViewDelegate, UITableViewDataSource {
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "cell") as! SimilarCell
         cell.title?.text = music.similar?[indexPath.row].title ?? ""
         cell.artist?.text = music.similar?[indexPath.row].artist ?? ""
+        cell.cellDelegate = self
         cell.play?.tag = indexPath.row
+        cell.load?.tag = indexPath.row
         return cell
     }
 
@@ -106,8 +179,29 @@ extension SoundVC:  UITableViewDelegate, UITableViewDataSource {
 }
 
 extension SoundVC: YourCellDelegate {
-    func didPressButton(_ tag: Int) {
+    
+    func didloadButton(_ tag: Int) {
+       
+        guard let url = URL(string: music.similar?[tag].link ?? "") else { return }
+        UIApplication.shared.open(url)
         
+    }
+    
+    func didPressButton(_ tag: Int) -> Bool {
+        playing = !playing
+        print(tag)
+        print(playing)
+        print(music.similar?[tag].link)
+        player.radioURL = URL(string: music.similar?[tag].link ?? "")
+        if playing {
+            player.isAutoPlay = true
+            player.play()
+            return true
+        } else {
+            player.stop()
+            return false
+        }
+        return playing
     }
     
     
