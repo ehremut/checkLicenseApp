@@ -25,4 +25,5 @@ struct ASRequest {
     var error : ErrorType?
     var json : JSON?
     var user : User?
+    var music : CheckModel?
 }

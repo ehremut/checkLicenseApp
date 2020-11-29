@@ -19,7 +19,7 @@ class NetworkService: NetworkManager {
                 switch data.code {
                 case .access:
                     res.code = data.code
-                    //parseJson(data: data.data!)
+                    parseJson(data: data.data!)
                     promise.fulfill(self.res)
                 case .error:
                     res.code = data.code
@@ -35,45 +35,52 @@ class NetworkService: NetworkManager {
             
         }
     }
+    
+    
+//    {
+//      "Find": {
+//        "Artist": "string",
+//        "Title": "string",
+//        "Album": "string",
+//        "Licence": "int"
+//      },
+//      "Similar": [
+//        {
+//          "Artist": "string",
+//          "Title": "string",
+//          "Album": "string",
+//          "Licence": "int"
+//        }
+//      ]
+//    }
+//
+//    OpenLicence    = 0
+//    CloseLicence   = 1
+//    UnknownLicence = 2
     
     func parseJson(data: Data){
         guard let jsondata = try? JSON(data: data) else {return}
         res.json = jsondata
-        guard let id = jsondata["User"]["Id"].int else {return}
-        guard let token = jsondata["User"]["Token"].string else {return}
-        guard let username = jsondata["User"]["Username"].string else {return}
-        guard let mobile = jsondata["User"]["Mobile"].string else {return}
-        guard let address = jsondata["User"]["Address"].string else {return}
-        guard let email = jsondata["User"]["Email"].string else {return}
-        let coord = Coordinate(latitude: jsondata["User"]["AddressCoord"]["Latitude"].double!, longitude: jsondata["User"]["AddressCoord"]["Longitude"].double!)
-        
-        let user = User(id: id, token: token, username: username, mobile: mobile, address: address, email: email, coord: coord)
-        self.res.user = user
-    }
-    
-    func sendComment(url: String) -> Promise<ASRequest> {
-        return Promise { [unowned self] promise in
-            print(Constant.sendParam)
-            let request = NetworkRequest.send(url: url, method: .post, parameters: Constant.sendParam)
-            self.performSend(request).done({ (data) in
-                switch data.code{
-                case .access:
-                    res.code = data.code
-                    parseJson(data: data.data ?? Data())
-                    promise.fulfill(self.res)
-                case .error:
-                    res.code = data.code
-                    res.error = data.error ?? ErrorType.unknown
-                    promise.fulfill(self.res ?? ASRequest(code: .error))
-                case .none:
-                    res.code = data.code ?? ASRequestType.error
-                    res.error = data.error ?? ErrorType.unknown
-                    promise.fulfill(self.res ?? ASRequest(code: .error))
-                }
-               // promise.fulfill(json)
-            })
-            
+        print("\n")
+        print(jsondata)
+        print("\n")
+        var mass = [AudioModel]()
+        guard let artist = jsondata["Find"]["artist"].string else {return}
+        guard let title = jsondata["Find"]["title"].string else {return}
+        guard let licence = jsondata["Find"]["licence"].int else {return}
+        guard let link = jsondata["Find"]["link"].string else {return}
+        let similar = jsondata["Similar"].array ?? []
+        for i in similar{
+            guard let artist = i["artist"].string else {return}
+            guard let title = i["title"].string else {return}
+            guard let licence = i["licence"].int else {return}
+            guard let link = jsondata["Find"]["link"].string else {return}
+            mass.append(AudioModel(artist: artist, title: title, licence: licence, link: link))
         }
+       
+        
+        let musics = CheckModel(find: AudioModel(artist: artist, title: title, licence: licence, link: link), similar: mass)
+        self.res.music = musics
     }
     
 }

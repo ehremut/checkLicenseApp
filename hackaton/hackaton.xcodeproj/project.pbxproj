@@ -30,6 +30,8 @@
 		EFB9660F2571BDAC009CB4E1 /* CustomTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB9660E2571BDAC009CB4E1 /* CustomTF.swift */; };
 		EFB9662625726F3D009CB4E1 /* CheckSoundVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB9662525726F3D009CB4E1 /* CheckSoundVC.swift */; };
 		EFB9662925726F7A009CB4E1 /* CheckSound.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFB9662825726F7A009CB4E1 /* CheckSound.storyboard */; };
+		EFF759D825731E6600D9ADD3 /* CheckModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF759D725731E6600D9ADD3 /* CheckModel.swift */; };
+		EFF759DC257324AD00D9ADD3 /* SimilarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF759DA257324AD00D9ADD3 /* SimilarCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +62,8 @@
 		EFB9660E2571BDAC009CB4E1 /* CustomTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTF.swift; sourceTree = "<group>"; };
 		EFB9662525726F3D009CB4E1 /* CheckSoundVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckSoundVC.swift; sourceTree = "<group>"; };
 		EFB9662825726F7A009CB4E1 /* CheckSound.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CheckSound.storyboard; sourceTree = "<group>"; };
+		EFF759D725731E6600D9ADD3 /* CheckModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckModel.swift; sourceTree = "<group>"; };
+		EFF759DA257324AD00D9ADD3 /* SimilarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimilarCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,7 @@
 		EF631CB22571AC2C00C1AB3D /* hackaton */ = {
 			isa = PBXGroup;
 			children = (
+				EFF759D625731E5500D9ADD3 /* Models */,
 				EF83DB4B2572EAFC00D78BFB /* Sound */,
 				EFB9662425726BC2009CB4E1 /* CheckSound */,
 				EFB966062571B272009CB4E1 /* Profile */,
@@ -150,6 +155,7 @@
 			children = (
 				EF83DB482572EAF600D78BFB /* Sound.storyboard */,
 				EF83DB4C2572EB1000D78BFB /* SoundVC.swift */,
+				EFF759DF257324BB00D9ADD3 /* SimilarCell */,
 			);
 			path = Sound;
 			sourceTree = "<group>";
@@ -201,6 +207,22 @@
 				EF83DB452572DD0600D78BFB /* CheckModule.swift */,
 			);
 			path = CheckSound;
+			sourceTree = "<group>";
+		};
+		EFF759D625731E5500D9ADD3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EFF759D725731E6600D9ADD3 /* CheckModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EFF759DF257324BB00D9ADD3 /* SimilarCell */ = {
+			isa = PBXGroup;
+			children = (
+				EFF759DA257324AD00D9ADD3 /* SimilarCell.swift */,
+			);
+			path = SimilarCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,11 +351,13 @@
 				EFB9660F2571BDAC009CB4E1 /* CustomTF.swift in Sources */,
 				EF83DB342572A05500D78BFB /* ExRequest.swift in Sources */,
 				EF83DB2E25729FF000D78BFB /* NetworkManager.swift in Sources */,
+				EFF759D825731E6600D9ADD3 /* CheckModel.swift in Sources */,
 				EFB9662625726F3D009CB4E1 /* CheckSoundVC.swift in Sources */,
 				EF631CB62571AC2C00C1AB3D /* SceneDelegate.swift in Sources */,
 				EF83DB422572A0F800D78BFB /* User.swift in Sources */,
 				EF83DB462572DD0700D78BFB /* CheckModule.swift in Sources */,
 				EF83DB372572A08D00D78BFB /* Constant.swift in Sources */,
+				EFF759DC257324AD00D9ADD3 /* SimilarCell.swift in Sources */,
 				EF83DB312572A02800D78BFB /* NetworkRequest.swift in Sources */,
 				EF83DB2B25729F4C00D78BFB /* NetworkService.swift in Sources */,
 			);

@@ -40,11 +40,11 @@
                             <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gjy-Jd-zbx">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgCheck" translatesAutoresizingMaskIntoConstraints="NO" id="J2f-u7-1my">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="J2f-u7-1my">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="v9f-VC-Ka5">
-                                        <rect key="frame" x="34" y="245.5" width="307" height="257.5"/>
+                                        <rect key="frame" x="34" y="183" width="307" height="257"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ixO-uX-Ycu">
                                                 <rect key="frame" x="0.0" y="0.0" width="307" height="115"/>
@@ -55,10 +55,10 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Iqw-6j-x34">
-                                                <rect key="frame" x="0.0" y="142" width="307" height="115.5"/>
+                                                <rect key="frame" x="0.0" y="142" width="307" height="115"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BPS-2t-v9a" customClass="LGButton" customModule="LGButton">
-                                                        <rect key="frame" x="0.0" y="0.0" width="307" height="50"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="307" height="49.5"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="BPS-2t-v9a" secondAttribute="height" multiplier="173:28" id="8aG-5b-i59"/>
@@ -80,7 +80,7 @@
                                                         </connections>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NnK-yh-Ji0" customClass="LGButton" customModule="LGButton">
-                                                        <rect key="frame" x="0.0" y="66" width="307" height="49.5"/>
+                                                        <rect key="frame" x="0.0" y="65.5" width="307" height="49.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="NnK-yh-Ji0" secondAttribute="height" multiplier="173:28" id="cxc-66-DZJ"/>
                                                         </constraints>
@@ -117,7 +117,7 @@
                                     <constraint firstItem="J2f-u7-1my" firstAttribute="leading" secondItem="Gjy-Jd-zbx" secondAttribute="leading" id="PjQ-rn-gA4"/>
                                     <constraint firstItem="v9f-VC-Ka5" firstAttribute="centerX" secondItem="Gjy-Jd-zbx" secondAttribute="centerX" id="TWf-d0-6cz"/>
                                     <constraint firstAttribute="trailing" secondItem="v9f-VC-Ka5" secondAttribute="trailing" constant="34" id="Xy3-zm-rnr"/>
-                                    <constraint firstAttribute="bottom" secondItem="v9f-VC-Ka5" secondAttribute="bottom" constant="120" id="tVO-Nf-aWe"/>
+                                    <constraint firstItem="v9f-VC-Ka5" firstAttribute="centerY" secondItem="Gjy-Jd-zbx" secondAttribute="centerY" id="kZr-tG-Cax"/>
                                     <constraint firstAttribute="bottom" secondItem="J2f-u7-1my" secondAttribute="bottom" id="xdR-5c-6vv"/>
                                     <constraint firstAttribute="trailing" secondItem="J2f-u7-1my" secondAttribute="trailing" id="zqg-vB-eAn"/>
                                 </constraints>
@@ -190,7 +190,7 @@
     </designables>
     <resources>
         <image name="addFile" width="34" height="34"/>
-        <image name="bgCheck" width="411" height="808"/>
+        <image name="bg" width="414" height="808"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

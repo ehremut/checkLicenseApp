@@ -51,7 +51,7 @@ class CheckSoundVC: UIViewController {
     
     
     @IBAction func fromFile(_ sender: UIControl) {
-        isLoading = true
+        //isLoading = true
         docPicker()
     }
     
@@ -89,6 +89,7 @@ extension CheckSoundVC: UIDocumentPickerDelegate {
         isLoading = true
         isLoaded = false
         checkStatus()
+        
         let imageDataFromURL = try? Data(contentsOf: url)
         let filename = url.absoluteString
         guard let sound = imageDataFromURL?.base64EncodedString() else { return }
@@ -111,8 +112,9 @@ extension CheckSoundVC: UIDocumentPickerDelegate {
                     
                 let storyBoard : UIStoryboard = UIStoryboard(name: "Sound", bundle:nil)
                 let nextViewController = storyBoard.instantiateViewController(withIdentifier: "SoundVC") as! SoundVC
+                nextViewController.music = flag.music ?? CheckModel()
                 self?.navigationController?.pushViewController(nextViewController, animated: true)
-               // nextViewController.info = flag
+                
                // self?.present(nextViewController, animated:true, completion:nil)
             print("GOOD")
             case .error:
